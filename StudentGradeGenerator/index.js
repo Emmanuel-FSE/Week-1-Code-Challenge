@@ -1,6 +1,7 @@
 const marksBtn = document.getElementById("markSubmit");
 const inputMarks = document.getElementById("marks")
 const gradeScore = document.getElementById("grade");
+const gradeD = document.getElementById("gradeDisplay");
 marksBtn.addEventListener("click", function(){
     const score = inputMarks.value;
     let gscore; 
@@ -29,6 +30,7 @@ marksBtn.addEventListener("click", function(){
           return 'INVALID SCORE';
 
     }
+    gradeD.classList.remove("visually-hidden");
     gradeScore.textContent = `${gscore} !`;
     
 })
