@@ -1,7 +1,10 @@
+// definition of variables
 const speedX = document.getElementById("speed");
 const speedParag = document.getElementById("speedP");
 const speedBTN = document.getElementById("speedBtn");
 
+
+//checking for speed parameters
 speedBTN.addEventListener("click", function(){
     const speed = speedX.value;
     if(speed <= 70){

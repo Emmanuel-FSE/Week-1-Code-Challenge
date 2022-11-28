@@ -1,7 +1,10 @@
+// definition of variables
 const marksBtn = document.getElementById("markSubmit");
 const inputMarks = document.getElementById("marks")
 const gradeScore = document.getElementById("grade");
 const gradeD = document.getElementById("gradeDisplay");
+
+// adding an eventlistener and checking for grades
 marksBtn.addEventListener("click", function(){
     const score = inputMarks.value;
     let gscore; 
